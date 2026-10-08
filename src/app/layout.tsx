@@ -3,11 +3,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://puripuri.dev"),
-  title: "ゆーずき (bafubafu) | Web & Server Engineer",
-  description: "株式会社DONUTSでミクチャのWeb・サーバー開発を担当しているエンジニア、ゆーずき(bafubafu)のポートフォリオサイトです。",
+  title: "bafubafu",
+  description: "DONUTSで「ミクチャ」のWeb・サーバー開発を担当しています。",
   openGraph: {
-    title: "ゆーずき (bafubafu) | Web & Server Engineer",
-    description: "株式会社DONUTSでミクチャのWeb・サーバー開発を担当しているエンジニア、ゆーずき(bafubafu)のポートフォリオサイトです。",
+    title: "bafubafu",
+    description: "DONUTSで「ミクチャ」のWeb・サーバー開発を担当しています。",
     url: "https://puripuri.dev",
     siteName: "puripuri.dev",
     locale: "ja_JP",
@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary",
-    title: "ゆーずき (bafubafu) | Web & Server Engineer",
-    description: "株式会社DONUTSでミクチャのWeb・サーバー開発を担当しているエンジニア、ゆーずき(bafubafu)のポートフォリオサイトです。",
+    title: "bafubafu",
+    description: "DONUTSで「ミクチャ」のWeb・サーバー開発を担当しています。",
     creator: "@bafubafu_bafuu",
   },
   alternates: {
