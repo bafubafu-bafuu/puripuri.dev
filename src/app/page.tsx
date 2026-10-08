@@ -2,9 +2,9 @@ export default function Home() {
   return (
     <main>
       <section>
-        <h1 className="role">Web & Server Engineer</h1>
+        <h1 className="role">profile</h1>
         <p>
-          株式会社DONUTSで、ライブ配信アプリ「<a href="https://mixch.tv/" target="_blank" rel="noopener noreferrer">ミクチャ</a>」のWeb・サーバーサイド開発を担当しています。
+          DONUTSで「<a href="https://mixch.tv/" target="_blank" rel="noopener noreferrer">ミクチャ</a>」のWeb・サーバー開発を担当しています。
         </p>
       </section>
 
