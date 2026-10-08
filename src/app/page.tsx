@@ -26,7 +26,7 @@ export default function Home() {
       <hr />
 
       <footer>
-        <p>&copy; {new Date().getFullYear()} puripuri.dev</p>
+        <p>&copy; 2026 puripuri.dev</p>
       </footer>
     </main>
   );
