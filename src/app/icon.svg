@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <style>
+    .bg { fill: #fdfdfd; }
+    .text { fill: #333333; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #1c1c1e; }
+      .text { fill: #fdfdfd; }
+    }
+  </style>
+  <rect width="100" height="100" rx="20" class="bg" />
+  <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-size="65" font-family="sans-serif" font-weight="bold" class="text">ω</text>
+</svg>
