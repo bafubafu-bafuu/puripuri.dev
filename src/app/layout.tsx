@@ -42,6 +42,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja" className={`${inter.variable} ${notoSansJp.variable}`}>
+      <head>
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4875418035439889"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body>{children}</body>
     </html>
   );
