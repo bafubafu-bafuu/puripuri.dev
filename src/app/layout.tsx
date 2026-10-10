@@ -1,22 +1,33 @@
 import type { Metadata } from "next";
+import { Inter, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-inter",
+});
+
+const notoSansJp = Noto_Sans_JP({
+  subsets: ["latin"],
+  variable: "--font-noto-sans-jp",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://puripuri.dev"),
-  title: "bafubafu",
-  description: "DONUTSで「ミクチャ」のWeb・サーバー開発を担当しています。",
+  title: "ぷりぷりのウェブサイト",
+  description: "ぷりぷりのウェブサイト。DONUTSで「ミクチャ」のWeb・サーバー開発をしています。",
   openGraph: {
-    title: "bafubafu",
-    description: "DONUTSで「ミクチャ」のWeb・サーバー開発を担当しています。",
+    title: "ぷりぷりのウェブサイト",
+    description: "ぷりぷりのウェブサイト。DONUTSで「ミクチャ」のWeb・サーバー開発をしています。",
     url: "https://puripuri.dev",
-    siteName: "puripuri.dev",
+    siteName: "ぷりぷり",
     locale: "ja_JP",
     type: "website",
   },
   twitter: {
     card: "summary",
-    title: "bafubafu",
-    description: "DONUTSで「ミクチャ」のWeb・サーバー開発を担当しています。",
+    title: "ぷりぷりのウェブサイト",
+    description: "ぷりぷりのウェブサイト。DONUTSで「ミクチャ」のWeb・サーバー開発をしています。",
     creator: "@bafubafu_bafuu",
   },
   alternates: {
@@ -30,7 +41,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ja">
+    <html lang="ja" className={`${inter.variable} ${notoSansJp.variable}`}>
       <body>{children}</body>
     </html>
   );
