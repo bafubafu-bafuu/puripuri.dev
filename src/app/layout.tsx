@@ -43,6 +43,12 @@ export default function RootLayout({
   return (
     <html lang="ja" className={`${inter.variable} ${notoSansJp.variable}`}>
       <head>
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          title="ぷりぷりのウェブサイト RSS"
+          href="/feed.xml"
+        />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4875418035439889"

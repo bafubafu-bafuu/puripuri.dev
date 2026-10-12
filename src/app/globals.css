@@ -60,11 +60,47 @@ a {
   transition: color 160ms ease;
 }
 
-.site-header nav a:hover,
 .site-header nav a:focus-visible,
-.contact-links a:hover,
+.contact-links a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 4px;
+}
+
+@media (min-width: 641px) and (hover: hover) {
+  .site-header nav a:hover,
+  .contact-links a:hover {
+    color: var(--link);
+  }
+}
+
 .contact-links a:focus-visible {
   color: var(--link);
+}
+
+.site-header nav a.is-active {
+  animation: nav-glow 2.4s ease-in-out infinite alternate;
+  color: var(--link);
+}
+
+@keyframes nav-glow {
+  from {
+    text-shadow: 0 0 4px rgb(120 139 255 / 25%);
+  }
+
+  to {
+    text-shadow: 0 0 12px rgb(120 139 255 / 75%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .site-header nav a.is-active,
+  .section.is-revealed {
+    animation: none;
+  }
+
+  .site-header nav a.is-active {
+    text-shadow: 0 0 8px rgb(120 139 255 / 55%);
+  }
 }
 
 .portfolio {
@@ -79,6 +115,22 @@ a {
   gap: clamp(2rem, 7vw, 6rem);
   grid-template-columns: minmax(120px, 220px) minmax(0, 1fr);
   padding: clamp(4.5rem, 10vw, 7.5rem) 0;
+}
+
+.section.is-revealed {
+  animation: section-reveal 600ms cubic-bezier(0.2, 0.7, 0.2, 1) both;
+}
+
+@keyframes section-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .section-title {
@@ -258,15 +310,15 @@ a {
   margin-top: 1.4rem;
 }
 
-.contact-links a {
-  font-size: 0.9rem;
+.contact-links .social-link {
+  align-items: center;
+  display: inline-flex;
   transition: color 160ms ease;
 }
 
-.contact-links span {
-  color: var(--muted);
-  font-size: 0.78rem;
-  margin-left: 0.2rem;
+.social-link svg {
+  height: 1.25rem;
+  width: 1.25rem;
 }
 
 .site-footer {
