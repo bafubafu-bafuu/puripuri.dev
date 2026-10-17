@@ -18,6 +18,19 @@ export default function ProjectsSection() {
           </span>
           <span className="work-stack">Chrome Extension</span>
         </a>
+        <a
+          className="work-item"
+          href="https://chromewebstore.google.com/detail/lookalike-link-alert/gelejfbndedbbleppckjdekbenkmamen"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <span className="work-year">Chrome</span>
+          <span className="work-description">
+            <strong>Lookalike Link Alert</strong>
+            <span>URLの類似文字や不審な構造を端末内で検査し、なりすましの警告を日本語で説明する拡張機能</span>
+          </span>
+          <span className="work-stack">Chrome Extension</span>
+        </a>
         <div className="work-item">
           <span className="work-year">Personal</span>
           <span className="work-description">
